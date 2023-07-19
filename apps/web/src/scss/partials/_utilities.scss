@@ -1,0 +1,47 @@
+
+
+
+
+
+.sg {
+    --_col-width: var(--col-width, 9rem);
+    --_col-count: var(--col-count, 6);
+
+    display: grid;
+    grid-template-columns: 
+        minmax(2rem, 1fr)
+        repeat(var(--_col-count), minmax(0, var(--_col-width)))
+        minmax(2rem, 1fr);
+
+
+
+    & > * {
+        grid-column: 2 / -2;
+    }
+
+
+    @include mq(medium) {
+        --_col-start: var(--col-start, 2);
+
+        &.two { --col-number: calc(var(--_col-count) / 2); }
+        &.three { --col-number: calc(var(--_col-count) / 3); }
+
+
+        &.cols { 
+            & > * {
+                grid-column: span var(--col-number);
+            }
+
+
+            & > *:first-child {
+                grid-column: var(--_col-start) / span var(--col-number);
+            }
+
+            & > *:last-child {
+                grid-column: span var(--col-number) / calc(var(--_col-start) * -1)
+            }
+        }
+
+    }
+
+}

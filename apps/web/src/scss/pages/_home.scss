@@ -1,0 +1,90 @@
+// Hero Component
+.p-hero {
+    align-items: center;
+    gap: 2rem 0;
+    padding-block: 2rem;
+    isolation: isolate;
+    
+   
+
+    &-content, &-div {
+        display: grid;
+    }
+
+
+    &-content {
+        gap: 1.5rem;
+        z-index: 2;
+        letter-spacing: -2px;
+        word-spacing: 3px;
+        font-family: var(--ff-heading);
+    } 
+
+
+    &-div, &-btnbar {
+        padding: 1.5rem 1.25rem;
+        padding-block-end: 1.75rem;
+        border-radius: 0.5rem; 
+        background: var(--clr-neutral-l300);
+    }
+
+
+
+    &-div {
+        gap: 1.25rem;
+
+
+
+        h1 {
+            font-size: var(--fs-700);
+            line-height: 1.05;
+        }
+
+
+        span {
+            font-size: var(--fs-600);
+            line-height: 1;
+        }
+    }
+
+
+
+
+    @include mq(medium) {
+        picture {
+            --_col-start: 2;
+            --col-number: 4;        
+        }
+
+        picture, &-content {
+            grid-row: 1 / 2;
+        }
+    }
+
+
+    &-btnbar {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.75rem;
+        background: var(--clr-neutral-l300);
+        width: fit-content;
+    }
+
+
+    button {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-200);
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.95rem 1.5rem;
+
+
+        &:focus-visible {
+            border: 1px solid var(--clr-neutral-d500);
+        }
+    }
+
+
+
+
+}
