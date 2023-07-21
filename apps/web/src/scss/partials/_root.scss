@@ -1,6 +1,6 @@
 :root {
     // color
---clr-primary: hsl(274.9deg 83.2% 50.98%);
+    --clr-primary: hsl(274.9deg 83.2% 50.98%);
     --clr-accent: hsl(35.85deg 84.54% 38.04%);
     --clr-secondary-g: hsl(168.2deg 36.53% 32.75%);
     --clr-secondary-b: hsl(188.14deg 100% 27.45%);
@@ -32,14 +32,14 @@
     --ff-heading: Arvo;
 
 
-    --fs-200: clamp(0.69rem, calc(0.59rem + 0.53vw), 1.00rem);
-    --fs-300: clamp(0.83rem, calc(0.69rem + 0.73vw), 1.25rem);
-    --fs-400: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.56rem);
-    --fs-500: clamp(1.20rem, calc(0.94rem + 1.31vw), 1.95rem);
-    --fs-600: clamp(1.44rem, calc(1.09rem + 1.74vw), 2.44rem);
-    --fs-700: clamp(1.73rem, calc(1.27rem + 2.30vw), 3.05rem);
-    --fs-800: clamp(2.07rem, calc(1.27rem + 2.6vw), 3.22rem);
-    --fs-900: clamp(2.35rem, calc(1.50rem + 3vw), 3.5rem);
+    --fs-200: clamp(0.61rem, calc(0.54rem + 0.33vw), 0.80rem);
+    --fs-300: clamp(0.73rem, calc(0.64rem + 0.47vw), 1.00rem);
+    --fs-400: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
+    --fs-500: clamp(1.05rem, calc(0.87rem + 0.89vw), 1.56rem);
+    --fs-600: clamp(1.26rem, calc(1.02rem + 1.21vw), 1.95rem);
+    --fs-700: clamp(1.51rem, calc(1.19rem + 1.62vw), 2.44rem);
+    --fs-800: clamp(1.81rem, calc(1.38rem + 2.15vw), 3.05rem);
+    --fs-900: clamp(2.18rem, calc(1.61rem + 2.85vw), 3.82rem);
 
 
      --shadow-color: var(--clr-shd, 274.97deg 83.11% 55.88%);

@@ -16,7 +16,7 @@
     background: var(--clr-neutral-l400);
     overflow-x: hidden;
     font-family: var(--ff-base);
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: var(--fs-400);
     color: var(--clr-neutral-d400);
 }
@@ -62,4 +62,8 @@ h5 {
 
 h6, strong {
     font-size: var(--fs-300);
+}
+
+p {
+    line-height: 1.5;
 }
