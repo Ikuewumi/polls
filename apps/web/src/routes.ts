@@ -5,6 +5,6 @@ import type { RouteDefinition } from '@solidjs/router';
 export const routes: RouteDefinition[] = [
     {
         path: '/',
-        component: lazy(() => import('./pages/home')),
+        component: lazy(() => import('./pages/home'))
     },
 ]

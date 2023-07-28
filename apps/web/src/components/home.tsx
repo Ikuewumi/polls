@@ -39,21 +39,21 @@ export const Features: Component = () => {
         {
             name: "Flexibility",
             img: <Check />,
-            description: "With Multi-Option Polls, you can delve deeper into your audience's preferences and opinions. Want to plan a team outing? Allow your colleagues to vote on multiple date options. Exploring product features? Let users rank their choices. Offering flexible and inclusive decision-making, this feature ensures your polls cater to a wider range of responses, making every vote count!"
+            description: "Offering flexible and inclusive decision-making, multi-options polls ensures your polls cater to a wider range of responses, making every vote count!"
         },
 
 
         {
             name: "Security",
             img: <Lock />,
-            description: "Safeguard sensitive polls with Password Protection. Whether it's confidential data, private discussions, or exclusive events, this feature empowers you to control access and ensure only the right participants can vote. Rest easy knowing your valuable insights and information remain secure, fostering trust and engagement among select users."
+            description: "With Password-Protected Polls, rest easy knowing your valuable insights and information remain secure, fostering trust and engagement among select users."
         },
 
 
         {
             name: "Anonymity",
             img: <Mask />,
-            description: "Encourage open and honest feedback with Anonymous Voting. Create a safe space for participants to express their opinions freely without fear of judgment. Perfect for sensitive topics, employee surveys, or customer feedback, this feature empowers users to provide genuine insights, delivering authentic results that drive better decision-making."
+            description: "Perfect for sensitive topics, employee surveys, or customer feedback, this feature empowers users to provide genuine insights, delivering authentic results that drive better decision-making."
         }
 
 
@@ -102,7 +102,6 @@ export const FeatureCard: Component<Feature> = (props) => {
         <article class="p-features-card">
             <div class="image">
                 {props.img}
-                <h3 aria-hidden="true">{props.name}</h3>
             </div>
             <div class="content">
                 <h3>{props.name}</h3>

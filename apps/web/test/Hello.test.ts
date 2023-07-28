@@ -5,4 +5,7 @@ describe("First test", () => {
     it("Hello", () => {
         expect(3 + 4 - 4).toEqual(3)
     })
+
+    it("Weirdness overload! 😊", () => {
+    })
 })
